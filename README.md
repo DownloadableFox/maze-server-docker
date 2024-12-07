@@ -3,6 +3,15 @@
 An experimental server for LiveOverflow's game "Maze", which was developed as part of the CSCG 2020. 
 If everything goes to plan, the code in this repository will soon be run on a DigitalOcean server for everyone interested to try out.
 
+## About Fork
+
+The following repo is a fork from the [original creator](https://github.com/pluxtore/maze-server). To run, you can use the prebuilt
+images from Github's Content Registry or build them yourself using the "compose.build.yml" file. The only requirement is having Docker
+installed of course.
+
+You're free to configure the default ports however you want, make sure to make a DNS record on your computer that points
+to the master server, the default port should be 8000.
+
 ## Update
 
 Unfortunately, there is no public server anymore, but you can still run one locally or even publicly yourself.

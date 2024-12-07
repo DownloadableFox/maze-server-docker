@@ -1,0 +1,16 @@
+# Only use the following Docker compose when you want
+# to build the images from the Dockerfiles. I'd recommend however
+# to use the pre-built images from the GHCR (compose.yml).
+
+services:
+  game:
+    build: ./maze_gameserver
+    container_name: maze-gameserver
+    ports:
+      - "1337:1337"
+      - "1338:1338"
+  master:
+    build: ./maze_masterserver
+    container_name: maze-master
+    ports:
+      - "8000:8000"
